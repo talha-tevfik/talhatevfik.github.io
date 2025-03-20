@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 void computeHomeValue(void) {
     int popularity, size;
     int homeValue;  
@@ -10,9 +10,9 @@ void computeHomeValue(void) {
     printf("Enter size: ");
     scanf("%d", &size);
 
-    homeValue = (popularity * popularity * popularity + size * size) * 10000;
+    homeValue = ((int)pow(popularity, 3) + (int)pow(size, 2)) * 10000;
 
-    printf("Home value is: %d\n", homeValue);
+    printf("Home's value is: %d\n", homeValue);
 }
 
 int main() {
