@@ -1,6 +1,0 @@
-#include <stdio.h>
-
-int main(void) {
-    printf("My name is Talha Tevfik Hafçı\n");
-    return 0;
-}
